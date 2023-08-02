@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/stroke"
+    android:backgroundTint="@color/white_blue"
+    tools:context=".Fragments.Popups.InfoTaskPopupFragment" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task Info"
+                android:textStyle="bold"
+                android:textSize="@dimen/_25ssp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Name"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/taskName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:ems="10"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:enabled="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:background="@drawable/stroke"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:hint="@string/task_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Description"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/taskDescription"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/description"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+                android:enabled="false"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:background="@drawable/stroke"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Start"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/taskStart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:ems="10"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:enabled="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:background="@drawable/stroke"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:hint="Task Start" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task End"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/taskEnd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:ems="10"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:enabled="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:background="@drawable/stroke"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:hint="Task End" />
+
+            <TextView
+                android:id="@+id/txtTaskActuallyEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Actually End"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                />
+            <EditText
+                android:id="@+id/taskActuallyEnd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:ems="10"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:enabled="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:background="@drawable/stroke"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:hint="Task Actually End"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnEndTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp"
+                    android:text="End Task" />
+
+
+                <Button
+                    android:id="@+id/btnClose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/close_button_style"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp"
+                    android:text="Close" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>

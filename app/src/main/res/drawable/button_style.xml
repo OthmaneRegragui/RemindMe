@@ -1,0 +1,16 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:padding="10dp">
+
+    <!-- Setting the solid color for the shape (background color) -->
+    <solid android:color="@color/yellow" />
+
+    <!-- Setting the radius of the corners to make it a rounded rectangle -->
+    <corners android:radius="@dimen/_7sdp" />
+
+    <!-- Adding a stroke (border) around the shape -->
+    <stroke
+        android:width="@dimen/_3ssp"
+        android:color="@color/black" />
+
+</shape>

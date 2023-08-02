@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/stroke"
+    android:backgroundTint="@color/white_blue"
+
+    tools:context=".Fragments.Popups.InstertOrEditTaskPopupFragment" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textStyle="bold"
+        android:textSize="@dimen/_25ssp"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/taskName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:ems="10"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:background="@drawable/stroke"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:hint="@string/task_name" />
+
+    <EditText
+        android:id="@+id/taskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/description"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:background="@drawable/stroke"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20ssp"
+            android:text="Set Time"
+            />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/button_style"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:text="Save" />
+</LinearLayout>
